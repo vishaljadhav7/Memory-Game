@@ -58,3 +58,88 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+
+
+
+
+
+
+
+
+// const tilesContainer = document.querySelector('.tiles-container');
+
+// const newColors = [
+//     ["red", "blue", "green", "yellow"],
+//     ["grey", "purple", "orange", "violet"],
+//     ["red", "blue", "green", "yellow"],
+//     ["grey", "purple", "orange", "violet"]
+// ]
+
+// let reavealedCount = 0;
+// // let activeTile = null ;
+// // let awaitEndOfMove = false;
+
+// let firstCard = null;
+// let secondCard = null;
+
+// function doesCardMatches(firstColor, secondColor){
+//     return firstColor === secondColor ? true : false ;
+// }
+
+// function handleClickedCard(){
+//   let recentCard = this;
+
+//   if(!firstCard){
+//     firstCard = recentCard;
+//     firstCard.style.backgroundColor =  firstCard.dataset.color
+//   }else if(firstCard !== recentCard){
+//     secondCard = recentCard;
+//     secondCard.style.backgroundColor = secondCard.dataset.color
+//     let isMatch= doesCardMatches(firstCard.dataset.color , secondCard.dataset.color);
+
+//     if(isMatch){
+//         reavealedCount+=2;
+//             setTimeout(()=>{
+//                 firstCard.style.visibility = "hidden";
+//                 secondCard.style.visibility = "hidden";
+//                 console.log("afascs")
+//                 firstCard = null;
+//                 secondCard = null;
+//                 if(reavealedCount === newColors[0].length * newColors.length){
+//                     alert("you have won the game")
+//                  }   
+//             },500)
+//     }else{
+//         setTimeout(()=>{
+//             firstCard.style.backgroundColor = '#111111';
+//             secondCard.style.backgroundColor = '#111111';
+//             console.log("afascs")
+//             firstCard = null;
+//             secondCard = null;
+//         },500)
+//         newColors.sort(()=> Math.random()-0.5)
+//         console.log(newColors)
+//     }
+//   }
+
+// }
+
+
+
+// function buildTile(color){
+//     const element = document.createElement('div')
+//     element.classList.add('tile');
+//     element.setAttribute('data-color', color)
+//     return element;
+// }
+
+
+
+// newColors.sort(()=> Math.random()-0.9).map((row,rowIdx)=>{
+//     row.map((col,colIdx)=>{
+//         const tile = buildTile(newColors[rowIdx][colIdx]);
+//         tile.addEventListener('click',handleClickedCard)
+//         tilesContainer.appendChild(tile)
+//     })
+// })
